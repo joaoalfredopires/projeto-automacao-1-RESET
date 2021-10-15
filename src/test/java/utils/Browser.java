@@ -21,6 +21,7 @@ public class Browser {
                 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
                 wait = new WebDriverWait(driver, 40);
                 driver.manage().window().maximize();
+                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
             } catch (MalformedURLException e) {
                 e.printStackTrace();
