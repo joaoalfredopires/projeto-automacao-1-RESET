@@ -3,10 +3,7 @@ package testes;
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import pageObjects.CategoryPage;
-import pageObjects.HomePage;
-import pageObjects.LoginPage;
-import pageObjects.SearchPage;
+import pageObjects.*;
 import utils.Browser;
 import utils.Utils;
 
@@ -49,7 +46,7 @@ public class SetupTest extends BaseTestes{
 
     }
 
-    @Test
+/*    @Test
     public void testSeach(){
 
         String quest = "DRESS";
@@ -69,7 +66,7 @@ public class SetupTest extends BaseTestes{
         assertThat(search.getTextHeading_counter(), CoreMatchers.containsString(questResult));
         System.out.println("Validou a pesquisa");
 
-    }
+    }*/
 
     @Test
     public void testAcessCategoryTShirts(){
@@ -84,5 +81,55 @@ public class SetupTest extends BaseTestes{
         //Validar se ao clicar na categoria T-Shirts ocorre o direcionamento correto
         assertTrue(category.isPageCategoryTShirt());
         System.out.println("Validou o direcionamento");
+    }
+
+    @Test
+    public void testProductPage(){
+
+        //Acessar categoria T-Shirts
+        testAcessCategoryTShirts();
+
+        //Iniciar páginas
+        CategoryPage category = new CategoryPage();
+        ProductDetailPage pdp = new ProductDetailPage();
+
+        //Salva o nome do produto na página de categoria
+        String productNameOnCategoryPage = category.getProductNameOnCategoryPage();
+
+        //Clicar em MORE e direcionar para a página de produto
+        category.clickProductDirToProductPage();
+        System.out.println("direcionou para a página de protudo");
+
+        //Validar se foi direcionado para a página de detalhes do produto
+        assertTrue(pdp.getProductNameOnPDP().equals(productNameOnCategoryPage));
+        System.out.println("Validou que houve o direcionamento para a PDP");
+
+    }
+
+    @Test
+    public void testAddProductToCartPage(){
+
+        //Acessa a página de produto
+        testProductPage();
+
+        //Inicia as páginas
+        ProductDetailPage pdp = new ProductDetailPage();
+        CartPage cart = new CartPage();
+
+        //Salva o nome do produto na PDP
+        String nameProductPDP = pdp.getProductNameOnPDP();
+
+        //Clica no botão Add to Cart
+        pdp.clickAddToCartButtonOnPDP();
+        System.out.println("Clicou em Add to cart");
+
+        //Clica no botão Preceed to checkout
+        pdp.clickProceedToCheckoutButtonOnPDP();
+        System.out.println("Clicou em Proceed to checkout");
+
+        //Validar se foi direcionado para a CartPage
+        assertTrue(cart.getProductNameOnCartPage().equals(nameProductPDP));
+        System.out.println("Validou se foi direcionado corretamente");
+
     }
 }

@@ -1,0 +1,46 @@
+{
+  "uid" : "acabba849d9d755e",
+  "name" : "testOpeningBrowserandLoadingPage",
+  "fullName" : "testes.SetupTest.testOpeningBrowserandLoadingPage",
+  "historyId" : "7547078024fc7ce9212c8a4d664e0612",
+  "time" : {
+    "start" : 1634404873917,
+    "stop" : 1634404882499,
+    "duration" : 8582
+  },
+  "status" : "passed",
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testes"
+  }, {
+    "name" : "testClass",
+    "value" : "testes.SetupTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testOpeningBrowserandLoadingPage"
+  }, {
+    "name" : "suite",
+    "value" : "testes.SetupTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MUCJ6IC"
+  }, {
+    "name" : "thread",
+    "value" : "5176@DESKTOP-MUCJ6IC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}
