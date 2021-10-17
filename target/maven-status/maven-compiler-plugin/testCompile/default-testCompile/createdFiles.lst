@@ -1,5 +1,6 @@
 elementMapper\LoginPageElementMapper.class
 elementMapper\CategoryPageElementMapper.class
+testes\CreateAnAccountTest.class
 utils\Browser.class
 testes\BaseTestes.class
 elementMapper\CartPageElementMapper.class

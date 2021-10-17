@@ -1,5 +1,7 @@
 package testes;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -9,22 +11,27 @@ import utils.Utils;
 
 import static org.junit.Assert.*;
 
+    //Nesta classe encontram-se todos os testes realizados acompanhando as aulas do módulo de automação de testes web.
+
+@Feature("Teste site de eccomerce")
 public class SetupTest extends BaseTestes{
 
     @Test
+    @Story("Abrir o site")
     public void testOpeningBrowserandLoadingPage(){
         assertTrue(Browser.getCurrentDriver().getCurrentUrl().contains(Utils.getBaseUrl()));
         System.out.println("Abrimos o navegador e abrimos a URL");
     }
 
     @Test
+    @Story("Realizar login")
     public void testLogin(){
 
         //Iniciar as páginas
         HomePage home = new HomePage();
         LoginPage login = new LoginPage();
 
-        home.clickBotaoLogin();
+        home.clickSignInButton();
         System.out.println("Click em Sign In na página inicial e direcionou para página de login");
         assertTrue(Browser.getCurrentDriver().getCurrentUrl().contains(Utils.getBaseUrl().
                 concat("index.php?controller=authentication&back=my-account")));
@@ -35,7 +42,7 @@ public class SetupTest extends BaseTestes{
         login.fillPasswd();
         System.out.println("Preencheu a senha");
 
-        login.clickBotaoSubmitLogin();
+        login.clickButtonSubmitLogin();
         System.out.println("Click em Sign In");
 
         assertTrue(Browser.getCurrentDriver().getCurrentUrl().contains(Utils.getBaseUrl().concat("index.php?controller=my-account")));
@@ -46,7 +53,8 @@ public class SetupTest extends BaseTestes{
 
     }
 
-/*    @Test
+    @Test
+    @Story("Fazer pesquisa por produto")
     public void testSeach(){
 
         String quest = "DRESS";
@@ -66,9 +74,10 @@ public class SetupTest extends BaseTestes{
         assertThat(search.getTextHeading_counter(), CoreMatchers.containsString(questResult));
         System.out.println("Validou a pesquisa");
 
-    }*/
+    }
 
     @Test
+    @Story("Acessar a categoria T-SHIRTS")
     public void testAcessCategoryTShirts(){
         //Iniciar páginas
         HomePage home = new HomePage();
@@ -84,6 +93,7 @@ public class SetupTest extends BaseTestes{
     }
 
     @Test
+    @Story("Acessar página de produto")
     public void testProductPage(){
 
         //Acessar categoria T-Shirts
@@ -107,6 +117,7 @@ public class SetupTest extends BaseTestes{
     }
 
     @Test
+    @Story("Adicionar produto ao carrinho")
     public void testAddProductToCartPage(){
 
         //Acessa a página de produto

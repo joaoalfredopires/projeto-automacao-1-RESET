@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: testes.SetupTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 90.296 s - in testes.SetupTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 98.483 s - in testes.SetupTest
