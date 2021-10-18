@@ -13,4 +13,9 @@ public class SearchPageElementMapper {
 
     @FindBy(className = "heading-counter")
     public WebElement heading_counter;
+
+    @FindBy(css = ".product-container .product-name[title='Printed Chiffon Dress']")
+    public WebElement productPrintedChiffonDress;
+
+
 }

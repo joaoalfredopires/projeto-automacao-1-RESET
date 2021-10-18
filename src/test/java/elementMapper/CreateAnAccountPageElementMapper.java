@@ -22,7 +22,7 @@ public class CreateAnAccountPageElementMapper {
     public WebElement selectFormMonthOfBirth;
 
     @FindBy(css = ".selector #years")
-    public WebElement selectFormMonthOfBirht;
+    public WebElement selectFormYearOfBirht;
 
     public WebElement company;
 
@@ -38,6 +38,8 @@ public class CreateAnAccountPageElementMapper {
     public WebElement postcode;
 
     public WebElement phone_mobile;
+
+    public WebElement alias;
 
     public WebElement submitAccount;
 }

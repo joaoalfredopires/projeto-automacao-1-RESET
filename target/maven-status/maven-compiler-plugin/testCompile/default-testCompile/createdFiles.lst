@@ -1,5 +1,6 @@
 elementMapper\LoginPageElementMapper.class
 elementMapper\CategoryPageElementMapper.class
+testes\FullPurchaseTest.class
 testes\CreateAnAccountTest.class
 utils\Browser.class
 testes\BaseTestes.class
@@ -9,6 +10,8 @@ pageObjects\CategoryPage.class
 pageObjects\HomePage.class
 testes\SetupTest.class
 pageObjects\MyAccountPage.class
+elementMapper\CreateAnAccountPageElementMapper.class
+pageObjects\CreateAnAccountPage.class
 elementMapper\MyAccountPageElementMapper.class
 elementMapper\HomePageElementMapper.class
 pageObjects\LoginPage.class

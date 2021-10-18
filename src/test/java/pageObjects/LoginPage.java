@@ -10,7 +10,7 @@ import java.util.Random;
 public class LoginPage extends LoginPageElementMapper {
 
     //Gerador de email
-    String emailAleatorio = "email_de_teste_joao"+ new Random().nextInt() +"gmail.com";
+    String emailAleatorio = "email_de_teste_joao"+ new Random().nextInt() +"@gmail.com";
 
     public LoginPage(){
         PageFactory.initElements(Browser.getCurrentDriver(), this);
@@ -28,18 +28,18 @@ public class LoginPage extends LoginPageElementMapper {
 
     @Step("Click no botão de Sign In para conta existente")
     public void clickButtonSubmitLogin(){
-        submitLogin.click();
+        SubmitLogin.click();
     }
 
     @Step("Preencher campo de email para criação de nova conta")
     public void fillEmailCreateAnAccount(){
         email_create.sendKeys(emailAleatorio);
-        System.out.println(emailAleatorio);
+        System.out.println("Email criado: "+ emailAleatorio);
     }
 
     @Step("Click no botão de Criar uma conta")
     public void clickSubmitCreate(){
-        submitCreate.click();
+        SubmitCreate.click();
     }
 
 }

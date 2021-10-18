@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testes.SetupTest" time="98.483" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testes.SetupTest" time="87.594" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,11 +18,10 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\JOO~1\AppData\Local\Temp\surefire2044528125903609192\surefirebooter8268210852081069889.jar C:\Users\João\AppData\Local\Temp\surefire2044528125903609192 2021-10-16T21-09-14_733-jvmRun1 surefire8754484625448237945tmp surefire_0738542252441275957tmp"/>
+    <property name="sun.java.command" value="C:\Users\JOO~1\AppData\Local\Temp\surefire4247690878171148133\surefirebooter2052453576748708900.jar C:\Users\João\AppData\Local\Temp\surefire4247690878171148133 2021-10-18T02-18-33_816-jvmRun1 surefire5729099615837201204tmp surefire_01378285150343244428tmp"/>
     <property name="surefire.test.class.path" value="I:\RESET\Projetos\Projeto automacao 1\target\test-classes;I:\RESET\Projetos\Projeto automacao 1\target\classes;C:\Users\João\.m2\repository\io\qameta\allure\allure-junit4\2.13.5\allure-junit4-2.13.5.jar;C:\Users\João\.m2\repository\io\qameta\allure\allure-java-commons\2.13.5\allure-java-commons-2.13.5.jar;C:\Users\João\.m2\repository\io\qameta\allure\allure-model\2.13.5\allure-model-2.13.5.jar;C:\Users\João\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\João\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\João\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\João\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\João\.m2\repository\org\apache\tika\tika-core\1.20\tika-core-1.20.jar;C:\Users\João\.m2\repository\org\jooq\joor-java-8\0.9.10\joor-java-8-0.9.10.jar;C:\Users\João\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\João\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\João\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\João\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\João\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\João\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\João\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\João\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\João\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\João\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\João\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\João\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\João\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\João\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\João\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\João\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\João\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\João\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\João\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\João\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\João\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\João\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;"/>
-    <property name="test" value="SetupTest"/>
-    <property name="allure.results.directory" value="I:\RESET\Projetos\Projeto automacao 1\target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="I:\RESET\Projetos\Projeto automacao 1\target/allure-results"/>
     <property name="user.home" value="C:\Users\João"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -33,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\JOO~1\AppData\Local\Temp\surefire2044528125903609192\surefirebooter8268210852081069889.jar;C:\Users\João\.m2\repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\JOO~1\AppData\Local\Temp\surefire4247690878171148133\surefirebooter2052453576748708900.jar;C:\Users\João\.m2\repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -63,10 +62,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testLogin" classname="testes.SetupTest" time="24.914"/>
-  <testcase name="testSeach" classname="testes.SetupTest" time="22.405"/>
-  <testcase name="testOpeningBrowserandLoadingPage" classname="testes.SetupTest" time="11.292"/>
-  <testcase name="testAcessCategoryTShirts" classname="testes.SetupTest" time="10.147"/>
-  <testcase name="testAddProductToCartPage" classname="testes.SetupTest" time="15.336"/>
-  <testcase name="testProductPage" classname="testes.SetupTest" time="13.099"/>
+  <testcase name="testLogin" classname="testes.SetupTest" time="13.67"/>
+  <testcase name="testSeach" classname="testes.SetupTest" time="21.714"/>
+  <testcase name="testOpeningBrowserandLoadingPage" classname="testes.SetupTest" time="9.615"/>
+  <testcase name="testAcessCategoryTShirts" classname="testes.SetupTest" time="11.015"/>
+  <testcase name="testAddProductToCartPage" classname="testes.SetupTest" time="18.94"/>
+  <testcase name="testProductPage" classname="testes.SetupTest" time="12.631"/>
 </testsuite>

@@ -1,8 +1,8 @@
 package testes;
 
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.hamcrest.CoreMatchers;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import pageObjects.*;
@@ -17,34 +17,31 @@ import static org.junit.Assert.*;
 public class SetupTest extends BaseTestes{
 
     @Test
-    @Story("Abrir o site")
+    @Description("Abrir o site")
+    @Severity(SeverityLevel.BLOCKER)
     public void testOpeningBrowserandLoadingPage(){
         assertTrue(Browser.getCurrentDriver().getCurrentUrl().contains(Utils.getBaseUrl()));
         System.out.println("Abrimos o navegador e abrimos a URL");
     }
 
     @Test
-    @Story("Realizar login")
+    @Description("Realizar login")
+    @Severity(SeverityLevel.CRITICAL)
     public void testLogin(){
 
         //Iniciar as páginas
         HomePage home = new HomePage();
         LoginPage login = new LoginPage();
 
+        //Na página inicial, clica em Sign In
         home.clickSignInButton();
-        System.out.println("Click em Sign In na página inicial e direcionou para página de login");
-        assertTrue(Browser.getCurrentDriver().getCurrentUrl().contains(Utils.getBaseUrl().
-                concat("index.php?controller=authentication&back=my-account")));
 
+        //Ná página de login, preenche os dados com usuário já cadastrado e faz login
         login.fillEmail();
-        System.out.println("Preencheu o email");
-
         login.fillPasswd();
-        System.out.println("Preencheu a senha");
-
         login.clickButtonSubmitLogin();
-        System.out.println("Click em Sign In");
 
+        //Valida se o usuário logou com sucesso e se ocorreu o direcionamento para a página My Account
         assertTrue(Browser.getCurrentDriver().getCurrentUrl().contains(Utils.getBaseUrl().concat("index.php?controller=my-account")));
         System.out.println("Validou a url da página minha conta");
 
@@ -54,7 +51,8 @@ public class SetupTest extends BaseTestes{
     }
 
     @Test
-    @Story("Fazer pesquisa por produto")
+    @Description("Fazer pesquisa por produto")
+    @Severity(SeverityLevel.NORMAL)
     public void testSeach(){
 
         String quest = "DRESS";
@@ -77,7 +75,8 @@ public class SetupTest extends BaseTestes{
     }
 
     @Test
-    @Story("Acessar a categoria T-SHIRTS")
+    @Description("Acessar a categoria T-SHIRTS")
+    @Severity(SeverityLevel.TRIVIAL)
     public void testAcessCategoryTShirts(){
         //Iniciar páginas
         HomePage home = new HomePage();
@@ -93,7 +92,8 @@ public class SetupTest extends BaseTestes{
     }
 
     @Test
-    @Story("Acessar página de produto")
+    @Description("Acessar página de produto")
+    @Severity(SeverityLevel.NORMAL)
     public void testProductPage(){
 
         //Acessar categoria T-Shirts
@@ -117,7 +117,8 @@ public class SetupTest extends BaseTestes{
     }
 
     @Test
-    @Story("Adicionar produto ao carrinho")
+    @Description("Adicionar produto ao carrinho")
+    @Severity(SeverityLevel.CRITICAL)
     public void testAddProductToCartPage(){
 
         //Acessa a página de produto
